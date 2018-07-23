@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>网易邮箱注册</title>
+        <style>
+            *{
+                padding:0; margin: 0;box-sizing: border-box;
+            }
+            body{
+                background-color: rgb(249, 249, 249);
+            }
+            .header{
+                width: 960px;
+                height: 81px;
+                margin: 0 auto;
+                /* background-color:red; */
+                padding-top: 31px;
+                box-sizing: border-box;
+            }
+            .header .em{
+                width: 644px;
+                height: 27px;
+                background-image: url(imges/glb_v2.png);
+                background-repeat: no-repeat;
+                float: left;
+            }
+            .header .em a{
+                height: 27px;
+                width: 107px;
+                /* background-color: blue; */
+                display: inline-block;
+                float: left;
+                margin-right: 25px;
+                
+            }
+            .header .link{
+                height: 27px;
+                float: right;
+                /* background-color: beige; */
+                color: #cccccc;
+            }
+            .header .link a{
+                font-size: 15px;
+                text-decoration: none;
+                color: #cccccc;
+            }
+            .content{
+                height: 747px;
+                width: 960px;
+                background-color: yellow;
+                margin :0 auto;
+            }
+            .content .banner{
+                height: 36spx;
+                width: 960px;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                background-image: url(imges/bgx.png);
+                background-repeat: repeat-x;
+                padding-left: 21px;
+                box-sizing: border-box;
+            }
+            .content .banner p{
+                line-height: 36px;
+                color: white;
+                font-size: 15px;
+                font-family: "微软雅黑";
+                
+            }
+            .content .panel{
+                width: 960px;
+                height: 711px;
+                background-color: khaki;
+            }
+            .content .panel .register{
+                height: 711px;
+                width: 644px;
+                background-color:white;
+                border: 1px solid #cccccc;
+                box-sizing: border-box;
+                float: left;
+            }
+            .content .panel .ads{
+                height: 711px;
+                width: 316px;
+                background-color:rgb(245, 245, 245);
+                border-right: 1px solid #cccccc;
+                border-bottom: 1px solid #cccccc;
+                box-sizing: border-box;
+                float: right;
+                padding-top: 107px;
+            }
+            .content .panel .ads .adimg{
+                width: 241px;
+                height: 326px;
+                background-image: url(imges/reg_master.gif);
+                background-repeat: no-repeat;
+                margin: 0 auto;
+            }
+            .content .panel .option{
+                width: 412px;
+                height: 35px;
+                background-color: rebeccapurple;
+                margin-top: 50px;
+                margin-left: 116px;
+                border-radius: 5px;
+                background-image: url(imges/tab.jpg);
+                padding-left: 26px;
+                box-sizing: border-box;
+            }
+           
+            .content .panel .option ul li{
+                font-size: 14px;
+                line-height: 35px;
+                color: black;
+                float: left;
+                list-style: none;
+                margin-right: 37px;
+                /* background-color: red; */
+                text-align: center;
+            }
+            .content .panel .emadrs{
+                width: 432px;
+                height: 29px;
+                /* background-color: rebeccapurple; */
+                margin-left: 92px;
+                font-size: 14px;
+                box-sizing: border-box;
+                margin-top: 32px;
+                line-height: 29px;
+            }
+            .content .panel .emadrs  .tips{
+                margin-left: 90px;
+                font-size: 12px;
+                color: rgb(153, 153, 153);
+                display: block;
+                line-height: 24px;
+            }
+            .content .panel .emadrs .star{
+                color: red;
+            }
+            .content .panel .psp{
+                width: 432px;
+                height: 29px;
+                margin-top: 42px;
+                /* background-color: red; */
+                margin-left: 98px;
+                font-size: 14px;
+            }
+            .content .panel .psp .tit{
+                margin-left:17px;
+            }
+            .content .panel .psp .tips{
+                margin-left: 84px;
+                font-size: 12px;
+                color: rgb(153, 153, 153);
+                display: block;
+                line-height: 24px;
+            }
+            .content .panel .psp .star{
+                color: red;
+            }
+
+            .content .panel .pspc{
+                width: 432px;
+                height: 29px;
+                margin-top: 42px;
+                /* background-color: red; */
+                margin-left: 92px;
+                font-size: 14px;
+            }
+            .content .panel .pspc .tit{
+                /*  margin-left:17px; */
+            }
+            .content .panel .pspc .tips{
+                margin-left: 90px;
+                font-size: 12px;
+                color: rgb(153, 153, 153);
+                display: block;
+                line-height: 24px;
+            }
+            .content .panel .pspc .star{
+                color: red;
+            }
+
+            .content .panel .tel{
+                width: 432px;
+                height: 29px;
+                margin-top: 42px;
+                /* background-color: red; */
+                margin-left: 92px;
+                font-size: 14px;
+            }
+            .content .panel .tel .tit{
+                /*  margin-left:17px; */
+            }
+            .content .panel .tel .tips{
+                margin-left: 90px;
+                font-size: 12px;
+                color: rgb(153, 153, 153);
+                display: block;
+                line-height: 24px;
+            }
+            .content .panel .tel .star{
+                color: red;
+            }
+            .content .panel .veru{
+                width: 423px;
+                height: 113px;
+                /* background-color: rebeccapurple; */
+                margin-top: 43px;
+                margin-left: 107px;
+                padding-top: 13px;
+            }
+
+            .content .panel .ver{
+                width: 432px;
+                height: 29px;
+                
+                /* background-color: red; */
+                /* margin-top: 13px; */
+                font-size: 14px;
+                /* float: left; */
+            }
+            .content .panel .ver .tit{
+                /*  margin-left:17px; */
+            }
+            .content .panel .ver .tips{
+                margin-left: 78px;
+                margin-top: 15px;
+                font-size: 12px;
+                color: rgb(153, 153, 153);
+                display: block;
+                line-height: 24px;
+            }
+            .content .panel .ver .star{
+                color: red;
+            }
+            .content .panel .veru .verim{
+                width: 120px;
+                height: 50px;
+                float: right;
+                margin-top: -13px;
+            }
+            .content .panel .veru .verim a{
+                font-size: 12px;
+            }
+            .content .panel .veru .getvc{
+                width: 142px;
+                height: 31px;
+                margin-left: 78px;
+                margin-top: 42px;
+            }
+            .content  .panel .veru .getvc input{
+                width: 140px;
+                height: 30px;
+                border-radius: 3px;
+                background-color:#f2f2f2;
+                border: 1px solid #cccccc;
+            }
+            .content .panel .sms{
+                width: 437px;
+                height: 29px;
+                margin-top: 17px;
+                /* background-color: red; */
+                margin-left: 78px;
+                font-size: 14px;
+            }
+            .content .panel .sms .tit{
+                /*  margin-left:17px; */
+            }
+            .content .panel .sms .tips{
+                margin-left: 100px;
+                font-size: 12px;
+                color: rgb(153, 153, 153);
+                display: block;
+                line-height: 24px;
+            }
+            .content .panel .sms .star{
+                color: red;
+            }
+            .content .panel .regbt{
+                width: 250px;
+                height: 71px;
+                margin-top: 47px;
+                margin-left: 180px;
+                font-size: 12px;
+
+            }
+            .content .panel .regbt>a{
+                width: 119px;
+                height: 37px;
+                background-image: url(imges/glb_v2.png);
+                background-position: -432px -360px;
+                display: block;
+                line-height: 37px;
+                margin-top: 20px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 15px;
+                color: white;
+                font-weight: bold;
+            }
+            .footer{
+                padding-top: 15px;
+                box-sizing: border-box;
+            }
+            .footer ul{
+                width: 580px;
+                height: 12px;
+                list-style: none;
+                color: #cccccc;
+                display: block;
+                font-size: 12px;
+                margin: 0 auto;
+                /* background-color:red; */
+            }
+            .footer ul li{
+                line-height: 12px;
+                float: left;
+                margin-right: 12px;
+                
+            }
+            .footer ul li a{
+                text-decoration: none;
+                color: #cccccc;
+            }
+            .footer .sours{
+                height: 12px;
+                width: 339px;
+                /* background-color: red; */
+                color: #cccccc;
+                font-size: 12px;
+                margin: 28px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="em">
+                <a href="#" title="网易163邮箱"></a>
+                <a href="#" title="网易126邮箱"></a>
+                <a href="#" title="网易yeah邮箱"></a>
+            </div>
+            <div class="link">
+                    <a href="#">了解更多</a>
+                    |
+                    <a href="#">反馈意见</a>        
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="banner">
+                <p>欢迎注册无限容量的网易邮箱！邮件地址可以登录使用其他网易旗下产品。</p>
+            </div>
+            <div class="panel">
+                <div class="register">
+                    <div class="option">
+                        <ul>
+                            <li><p style="color: white">注册字母邮箱</p></li>
+                            <li><p>注册手机号码邮箱</p></li>
+                            <li><p>注册VIP邮箱</p></li>
+                        </ul>
+                    </div>
+                    <div class="emadrs">
+                        <form>
+                            <span class="tit"><span class="star">* </span>邮件地址</span><input type="text" name="邮件地址" value="建议用手机号码注册" style="height: 28px;width: 213px;;margin-left: 20px; border-radius: 5px"> @
+                            <select name="后缀" style="height: 28px;width: 100px;font-size: 17px;color: rgb(85, 85, 85);font-weight: bold;">
+                                <option value="163.com">163.com</option>
+                                <option value="126.com">126.com</option>
+                                <option value="yeah.net">yeah.net</option>
+                            </select>
+                        </form>
+                        <span class="tips">6~18个字符，可使用字母、数字、下划线，需以字母开头</span>
+                    </div>
+                    <div class="psp">
+                        <form>
+                            <span class="tit"><span class="star">* </span>密码</span>
+                            <input type="password" name="密码" style="height: 28px;width: 335px;margin-left: 20px; border-radius: 5px">
+                        </form>
+                        <span class="tips">6~16个字符，区分大小写</span>
+                    </div>
+                    <div class="pspc">
+                            <form>
+                                <span class="tit"><span class="star">* </span>确认密码</span>
+                                <input type="password" name="确认密码" style="height: 28px;width: 335px;margin-left: 15px; border-radius: 5px">
+                            </form>
+                            <span class="tips">请再次填写密码</span>
+                    </div>
+                    <div class="tel">
+                            <form>
+                                <span class="tit"><span class="star">* </span>手机号码</span>
+                                <input type="text" name="手机号码" value="+86-" style="height: 28px;width: 335px;margin-left: 15px; border-radius: 5px; font-weight:800;">
+                            </form>
+                            <span class="tips">忘记密码时，可以通过该手机号码快速找回密码</span>
+                    </div>
+                    <div class="veru">
+                            <div class="verim">
+                                    <img src="imges/call.jpg" />
+                                    <a href="#">看不清楚？换张图片</a>
+                            </div>
+                            <div class="ver">
+                                    <form>
+                                        <span class="tit"><span class="star">* </span>验证码</span>
+                                        <input type="text" name="验证码" style="height: 28px;width: 209px;margin-left: 15px; border-radius: 5px">
+                                    </form>
+                                    <span class="tips">请填写图片中的字符，不区分大小写 </span>
+                            </div>
+                            <div class="getvc">
+                                <form>
+                                    <input type="submit" name="verify_code" value="免费获取验证码"/>
+                                </form>
+                            </div>
+                    </div>
+                    <div class="sms">
+                            <form>
+                                <span class="tit"><span class="star">* </span>短信验证码</span>
+                                <input type="text" name="短信验证码" style="height: 28px;width: 335px;margin-left: 15px; border-radius: 5px">
+                            </form>
+                            <span class="tips">请查收手机短信，并填写短信中的验证码</span>
+                    </div>
+                    <div class="regbt">
+                        <form>
+                            <input type="checkbox" checked="checked" name="declaration"/> 同意<a href="#">“服务条款”</a>和<a href="#">“隐私权相关政策”</a>
+                        </form>
+                        <a href="#">立即注册</a>
+                    </div>
+                </div>
+                <div class="ads">
+                    <div class="adimg"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <ul>
+                <li><a href="#" title="关于网易">关于网易 </a></li>
+                <li><a href="#" title="关于网易免费邮">关于网易免费邮 </a></li>
+                <li><a href="#" title="邮箱官方博客">邮箱官方博客 </a></li>
+                <li><a href="#" title="客户服务">客户服务 </a></li>
+                <li><a href="#" title="隐私政策">隐私政策 </a></li>
+                <li>|</li>
+                <li>网易公司版权所有 &copy 1997-2018</li>
+            </ul>
+            <div class="sours">
+                <p>
+                    数据来源：艾媒咨询《2015-2018中国个人邮箱行业研究报告》
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
